@@ -19,3 +19,14 @@ for i in range(0, len(num) - 1):
             num[j], num[j + 1] = num[j + 1], num[j]
 
 print(num)
+
+for i in range(len(num) - 1):
+    swapped = False
+    for j in range(len(num) - i - 1):
+        if num[j] > num[j + 1]:                         # >= 대신 > 써도 됨 (중복값 있을 때는 swap할 필요 없음)
+            num[j], num[j + 1] = num[j + 1], num[j]
+            swapped = True
+    if not swapped:
+        break                                           # 한 단계에서 swap이 일어나지 않았으면 이미 정렬된 상태임
+
+print(num)
