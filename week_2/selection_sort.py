@@ -27,7 +27,7 @@ print(num)
 
 num = [5, 4, 1, 8, 7, 2, 6, 3]
 
-for i in range(len(num)):
+for i in range(len(num) - 1): # len(num) - 1 번만 정렬해도 맨 마지막건 자동으로 정렬됨
     min_idx = i
     for j in range(i + 1, len(num)):
         if num[j] < num[min_idx]:
