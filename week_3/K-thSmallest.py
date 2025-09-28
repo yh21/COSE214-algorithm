@@ -2,8 +2,8 @@ def select(A, k):
     assert 1 <= k <= len(A)
     if len(A) == 1:
         return A[0]
-    p = choose_pivot(A)
-    A_less = [x for x in A if x < p]
+    p = choose_pivot(A)                         # len(A) = 1 이면 원소 반환
+    A_less = [x for x in A if x < p]            # pivot 기준으로 list 나누기
     A_greater = [x for x in A if x > p]
     if len(A_less) == k - 1:
         return p
