@@ -1,5 +1,4 @@
 # insertion sort
-
 # [_, _, _, _]
 # ------------
 # [5, _, _, _] # Insert 5
@@ -11,8 +10,8 @@
 # [_, 4, 5, _] # 4 > 2. Shift 5 to the right
 # [2, 4, 5, _] # Insert 2
 
+# code of Insertion Sort
 num = [5, 4, 1, 8, 7, 2, 6, 3]
-
 for i in range(1, len(num)):
     current  = num[i]
     j = i - 1
