@@ -1,3 +1,5 @@
+# code of Merge Sort
+
 def merge_sort(A):
     n = len(A)
     if n <= 1:

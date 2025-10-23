@@ -1,6 +1,7 @@
+# code of Radix Sort
+
 nums = [329, 457, 657, 839, 436, 720, 355]
 dig = int(len(str(max(nums))))
-# print(M)
 
 def digit(n, d):
     if n >= 10 ** (d - 1):

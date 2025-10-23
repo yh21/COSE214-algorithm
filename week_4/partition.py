@@ -1,3 +1,5 @@
+# Code of Lomuto Partition Algorithm
+
 nums = [3, 8, 2, 5, 1, 4, 7, 6]
 
 def partition(A, left, right):
@@ -15,7 +17,7 @@ print(partition(nums, 0, len(nums) - 1), nums)
 # [3, 8, 2, 5, 1, 4, 7, 6] i = 1, j = 1 no swap | 8 > 3
 # [3, 2, 8, 5, 1, 4, 7, 6] i = 1, j = 2 swap 8, 2 and i += 1
 # [3, 2, 8, 5, 1, 4, 7, 6] i = 2, j = 3 no swap
-#[3, 2, 1, 5, 8, 4, 7, 6] i = 2, j = 4 swap 8, 1 and i += 1
+# [3, 2, 1, 5, 8, 4, 7, 6] i = 2, j = 4 swap 8, 1 and i += 1
 # .
 # .
 # no swap

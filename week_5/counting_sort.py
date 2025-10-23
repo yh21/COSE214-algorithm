@@ -1,5 +1,4 @@
-# counting sort
-# bucket sort랑은 다름!!!!!
+# code of counting sort
 
 nums = [1, 7, 9, 2, 6, 7, 4, 8]
 lenn = len(nums)
